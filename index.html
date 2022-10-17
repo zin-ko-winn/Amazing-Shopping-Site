@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/shop.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Shopping Site</title>
+    <script type="module" crossorigin src="/assets/index.a077762f.js"></script>
+    <link rel="stylesheet" href="/assets/index.57c20812.css">
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-11 col-lg-10 mx-auto">
+          <div class="sticky-top">
+            <header class="d-flex align-items-center p-3 shadow-sm mt-3 mb-1 mt-md-4 mb-md-4 w-100 bg-white sticky-top">
+              <h3 class="mb-0">
+                <i class="bi bi-shop text-primary"></i>
+                MyShop
+              </h3>
+              <div class="d-flex ms-auto">
+                <input type="text" class="form-control d-none d-md-block filter-search" placeholder="Search">
+                <select name="" id="" class="form-select mx-3 d-none d-md-block filter-select">
+                  <option value="all" selected>All Categories</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="jewelery">Jewellery</option>
+                  <option value="men's clothing">Men's Clothing</option>
+                  <option value="women's clothing">Women's Clothing</option>
+                </select>
+                <button type="button" class="btn btn-primary position-relative d-flex px-3 py-2 cart-menu-btn animate__animated" data-bs-toggle="offcanvas" data-bs-target="#sideBarCart">
+                  <i class="bi bi-cart me-1"></i> Cart
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">0</span>
+                </button>
+              </div>
+            </header>
+            <div class="d-flex d-md-none mb-4 p-3 justify-content-between align-items-center bg-white shadow-sm fixed">
+              <select name="" id="" class="form-select mx-3 d-block d-md-none ms-0 filter-select">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewellery</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+              </select>
+              <input type="text" class="form-control d-block d-md-none filter-search" placeholder="Search">
+            </div>
+          </div>
+          <main class="item-card-container row g-3 g-lg-4 mb-4 mb-lg-5"></main>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end bg-light" data-bs-backdrop="static" tabindex="-1" id="sideBarCart" aria-labelledby="sideBarCartLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold" id="sideBarCartLabel"><i class="bi bi-cart me-1"></i> Shop Cart <span class="badge bg-info bg-opacity-10 text-primary cart-count">0</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="added-cart-container"></div>
+      </div>
+      <div class="offcanvas-footer p-3 border-top">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <p class="mb-0">Total</p>
+          <h3 class="mb-0 fw-bold">$ <span id="total">0.00</span></h3>
+        </div>
+        <button class="btn btn-primary w-100 py-2"><span class="h5">Checkout</span></button>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
